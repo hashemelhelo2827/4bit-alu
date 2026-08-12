@@ -26,12 +26,12 @@ alu_project/
 │   ├── 4bit_and.bdf    4bit_or.bdf
 │   ├── 4bit_adder.bdf  1bit_adder.bdf
 │   ├── 4bit_mux.bdf   fanout4.bdf
-└── legacy/           # Archived old combinational ALU (gitignored)
+└── legacy/           # Archived old combinational ALU (for reference)
 └── output_files/     # Generated compile outputs (alu.sof, reports)
 ```
 
 > [!NOTE]
-> `legacy/` holds the previous combinational-only ALU design. It is kept on disk but ignored by git — this repo tracks only the register-based design.
+> `legacy/` holds the previous combinational-only ALU design, kept in the repo for reference. The active design tracked here is the register-based ALU.
 
 ## Prerequisites
 
