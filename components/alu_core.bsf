@@ -22,7 +22,7 @@ https://fpgasoftware.intel.com/eula.
 (header "symbol" (version "1.2"))
 (symbol
 	(rect 16 16 152 112)
-	(text "4bit_or" (rect 5 0 45 19)(font "Intel Clear" (font_size 8)))
+	(text "alu_core" (rect 5 0 47 19)(font "Intel Clear" (font_size 8)))
 	(text "inst" (rect 8 75 24 92)(font "Intel Clear" ))
 	(port
 		(pt 0 32)
@@ -39,11 +39,25 @@ https://fpgasoftware.intel.com/eula.
 		(line (pt 0 48)(pt 16 48)(line_width 3))
 	)
 	(port
+		(pt 0 64)
+		(input)
+		(text "S[1..0]" (rect 0 0 38 19)(font "Intel Clear" (font_size 8)))
+		(text "S[1..0]" (rect 21 59 59 78)(font "Intel Clear" (font_size 8)))
+		(line (pt 0 64)(pt 16 64)(line_width 3))
+	)
+	(port
 		(pt 136 32)
 		(output)
 		(text "O[3..0]" (rect 0 0 40 19)(font "Intel Clear" (font_size 8)))
 		(text "O[3..0]" (rect 75 27 115 46)(font "Intel Clear" (font_size 8)))
 		(line (pt 136 32)(pt 120 32)(line_width 3))
+	)
+	(port
+		(pt 136 48)
+		(output)
+		(text "cflag" (rect 0 0 28 19)(font "Intel Clear" (font_size 8)))
+		(text "cflag" (rect 87 43 115 62)(font "Intel Clear" (font_size 8)))
+		(line (pt 136 48)(pt 120 48))
 	)
 	(drawing
 		(rectangle (rect 16 16 120 80))
