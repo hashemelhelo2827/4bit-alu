@@ -1,0 +1,17 @@
+# Quartus Prime build artifacts
+db/
+incremental_db/
+output_files/
+simulation/
+*.qws
+
+# Quartus log / temp
+*.aries
+*.hdb
+*.rpt
+*.msg
+c5_pin_model_dump.txt
+
+# OS
+Thumbs.db
+desktop.ini
